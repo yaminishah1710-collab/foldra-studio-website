@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foldra Studio · Get a quote</title>
+<meta name="description" content="Tell Foldra Studio about your product and get questions or a written packaging quote.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 62 64%27%3E%3Crect width=%2716%27 height=%2764%27 fill=%27%231F5A60%27/%3E%3Crect x=%2715.5%27 width=%2730.5%27 height=%2716%27 fill=%27%231F5A60%27/%3E%3Crect x=%2715.5%27 y=%2724%27 width=%2718.5%27 height=%2716%27 fill=%27%231F5A60%27/%3E%3Cpath d=%27M46 0V16H62Z%27 fill=%27%23E07A2E%27/%3E%3Cpath d=%27M34 24V40H50Z%27 fill=%27%23E07A2E%27/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&amp;family=Jost:wght@300;400;500&amp;display=swap">
+<style>
+body{margin:0;background:#EEEBE6}
+a{color:#1F5A60}a:hover{color:#16302C}
+.fx-wrap{max-width:1240px;margin:0 auto;padding:0 48px;box-sizing:border-box}
+.fx-layout{display:grid;grid-template-columns:minmax(0,8fr) minmax(0,4fr);gap:96px;align-items:start}
+.fx-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 40px}
+.fx-span{grid-column:1 / -1}
+.fx-nav{display:flex;gap:40px}
+.fx-in{width:100%;box-sizing:border-box;height:48px;padding:0 2px;border:0;border-bottom:1px solid #1F5A60;border-radius:0;background:transparent;font-family:'Jost',system-ui,sans-serif;font-weight:300;font-size:17px;color:#16302C}
+.fx-in:focus{outline:2px solid #1F5A60;outline-offset:4px}
+textarea.fx-in{height:104px;padding:12px 2px;resize:vertical;line-height:1.6}
+select.fx-in{appearance:auto}
+.fx-lab{display:block;font-family:'Jost',system-ui,sans-serif;font-size:11px;line-height:1.4;font-weight:500;letter-spacing:.22em;text-transform:uppercase;color:#1F5A60;margin-bottom:4px}
+@media (max-width:900px){
+.fx-wrap{padding:0 20px}
+.fx-layout,.fx-two{grid-template-columns:minmax(0,1fr);gap:28px}
+.fx-nav{display:none}
+}
+
+/* Phone header: logo + button on one row, menu below */
+@media (max-width:900px){
+.fx-bar{flex-wrap:wrap;height:auto!important;padding-top:14px!important;padding-bottom:14px!important;row-gap:14px!important}
+.fx-bar > a:last-child{height:40px!important;padding:0 14px!important;letter-spacing:.14em!important;font-size:11px!important}
+.fx-bar > a:first-child span{font-size:24px!important}
+.fx-nav{display:flex!important;order:3;width:100%;justify-content:space-between;gap:12px!important;font-size:11px!important;letter-spacing:.16em!important}
+}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+<div style="font-family:'Jost',system-ui,sans-serif;font-weight:300;font-size:16px;line-height:1.7;color:#16302C;background:#EEEBE6;min-height:100%">
+
+<header style="background:#EEEBE6;border-bottom:1px solid #C9CFCB">
+  <div class="fx-wrap fx-bar" style="display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px">
+    <a href="index.html" aria-label="Foldra Studio, home" style="display:flex;align-items:center;gap:14px;text-decoration:none;color:#16302C">
+      <svg viewBox="0 0 62 64" width="24" height="25" aria-hidden="true"><rect x="0" y="0" width="16" height="64" fill="#1F5A60"></rect><rect x="15.5" y="0" width="30.5" height="16" fill="#1F5A60"></rect><rect x="15.5" y="24" width="18.5" height="16" fill="#1F5A60"></rect><path d="M46 0V16H62Z" fill="#E07A2E"></path><path d="M34 24V40H50Z" fill="#E07A2E"></path></svg>
+      <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:27px;line-height:1;font-weight:500;letter-spacing:.005em">Foldra <span style="font-style:italic;font-weight:400">Studio</span></span>
+    </a>
+    <nav class="fx-nav" aria-label="Main" style="font-size:12px;line-height:1;font-weight:400;letter-spacing:.22em;text-transform:uppercase">
+      <a href="services.html" style="color:#16302C;text-decoration:none">Services</a>
+      <a href="index.html#process" style="color:#16302C;text-decoration:none">Process</a>
+      <a href="#" style="color:#16302C;text-decoration:none">Work</a>
+      <a href="#" style="color:#16302C;text-decoration:none">About</a>
+    </nav>
+    <a href="quote.html" aria-current="page" style="display:inline-flex;align-items:center;height:44px;padding:0 22px;background:#1F5A60;border:1px solid #1F5A60;border-radius:2px;color:#EEEBE6;font-size:12px;line-height:1;font-weight:500;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;box-sizing:border-box">Get a quote</a>
+  </div>
+</header>
+
+<section aria-labelledby="h" style="padding:120px 0 80px">
+  <div class="fx-wrap">
+    <p style="margin:0 0 36px;display:flex;align-items:center;gap:16px;font-size:12px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60"><span aria-hidden="true" style="width:40px;border-top:1px solid #1F5A60"></span>Your brief</p>
+    <h1 id="h" style="margin:0 0 28px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(52px,6.6vw,96px);line-height:0.98;letter-spacing:-0.015em">Get a <span style="font-style:italic;font-weight:400;color:#1F5A60">quote.</span></h1>
+    <p style="margin:0;font-size:19px;line-height:1.65;max-width:560px;color:#2A4440">Tell us about your product. We'll reply with questions or a written quote within [TBC] working days.</p>
+  </div>
+</section>
+
+<section style="padding:0 0 144px">
+  <div class="fx-wrap fx-layout">
+    <div>
+      <form id="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data" style="position:relative;background:#F7F5F1;border:1px solid #C9CFCB;padding:56px 56px 60px">
+        <span aria-hidden="true" style="position:absolute;top:0;right:0;width:28px;height:28px;background:#E07A2E;clip-path:polygon(0 0,100% 0,100% 100%)"></span>
+        <h2 style="margin:0 0 36px;display:flex;align-items:baseline;gap:16px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:30px;line-height:1.1"><span style="font-style:italic;font-weight:400;font-size:22px;color:#1F5A60">i.</span>About you</h2>
+        <div class="fx-two">
+          <div><label class="fx-lab" for="q-name">Name *</label><input class="fx-in" id="q-name" name="name" type="text" required="required"></div>
+          <div><label class="fx-lab" for="q-brand">Brand / company *</label><input class="fx-in" id="q-brand" name="brand" type="text" required="required"></div>
+          <div><label class="fx-lab" for="q-email">Email *</label><input class="fx-in" id="q-email" name="email" type="email" required="required"></div>
+          <div><label class="fx-lab" for="q-phone">Phone / WhatsApp *</label><input class="fx-in" id="q-phone" name="phone" type="tel" required="required"></div>
+          <div><label class="fx-lab" for="q-city">City</label><input class="fx-in" id="q-city" name="city" type="text"></div>
+        </div>
+
+        <h2 style="margin:64px 0 36px;padding-top:40px;border-top:1px solid #C9CFCB;display:flex;align-items:baseline;gap:16px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:30px;line-height:1.1"><span style="font-style:italic;font-weight:400;font-size:22px;color:#1F5A60">ii.</span>Your product</h2>
+        <div class="fx-two">
+          <div class="fx-span"><label class="fx-lab" for="q-product">What's the product? *</label><textarea class="fx-in" id="q-product" name="product" required="required"></textarea></div>
+          <fieldset class="fx-span" style="border:0;margin:0;padding:0;min-width:0">
+            <legend class="fx-lab" style="padding:0;margin-bottom:14px">What do you need?</legend>
+            <div style="display:flex;flex-wrap:wrap;gap:10px">
+              <button type="button" class="fx-chip" aria-pressed="false" data-value="Product packaging">Product packaging</button>
+                <button type="button" class="fx-chip" aria-pressed="false" data-value="Boxes and retail packaging">Boxes and retail packaging</button>
+                <button type="button" class="fx-chip" aria-pressed="false" data-value="Shipping packaging">Shipping packaging</button>
+                <button type="button" class="fx-chip" aria-pressed="false" data-value="Unboxing details">Unboxing details</button>
+                <button type="button" class="fx-chip" aria-pressed="false" data-value="Gifting and kits">Gifting and kits</button>
+                <button type="button" class="fx-chip" aria-pressed="false" data-value="Reusable and right-sized options">Reusable and right-sized options</button>
+                <button type="button" class="fx-chip" aria-pressed="false" data-value="Packaging by industry">Packaging by industry</button>
+                <button type="button" class="fx-chip" aria-pressed="false" data-value="Packaging planning">Packaging planning</button>
+            </div>
+          </fieldset>
+          <div><label class="fx-lab" for="q-qty">Approximate quantity</label><input class="fx-in" id="q-qty" name="quantity" type="text"></div>
+          <div><label class="fx-lab" for="q-date">Date you need it by</label><input class="fx-in" id="q-date" name="needed_by" type="date"></div>
+          <div><label class="fx-lab" for="q-budget">Budget range (optional)</label>
+            <select class="fx-in" id="q-budget" name="budget"><option>Choose one</option><option>[TBC: budget range 1]</option><option>[TBC: budget range 2]</option><option>[TBC: budget range 3]</option><option>Not sure yet</option></select></div>
+          <div><label class="fx-lab" for="q-file">Reference images or artwork (optional)</label><input id="q-file" name="attachment" type="file" style="font-family:inherit;font-size:14px;padding-top:12px"></div>
+          <div class="fx-span"><label class="fx-lab" for="q-notes">Anything else</label><textarea class="fx-in" id="q-notes" name="notes"></textarea></div>
+        </div>
+        <button type="submit" style="display:inline-flex;align-items:center;gap:14px;margin-top:48px;height:56px;padding:0 32px;background:#1F5A60;color:#EEEBE6;border:0;border-radius:2px;font-family:'Jost',system-ui,sans-serif;font-size:12px;line-height:1;font-weight:500;letter-spacing:.22em;text-transform:uppercase;cursor:pointer">Send my brief <span aria-hidden="true" style="font-size:16px;letter-spacing:0">→</span></button>
+      <input type="hidden" name="services" id="q-services" value="">
+        <p id="quote-error" role="alert" hidden style="margin:20px 0 0;color:#8A2E0E;font-weight:400">Sorry, that didn't send. Please email hello@foldrastudio.com instead.</p>
+      </form>
+      <div id="quote-thanks" role="status" hidden style="position:relative;background:#F7F5F1;border:1px solid #C9CFCB;padding:72px 56px">
+          <span aria-hidden="true" style="position:absolute;top:0;right:0;width:28px;height:28px;background:#E07A2E;clip-path:polygon(0 0,100% 0,100% 100%)"></span>
+          <h2 style="margin:0 0 20px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:44px;line-height:1.08;letter-spacing:-0.01em">Thank you. <span style="font-style:italic;font-weight:400;color:#1F5A60">We'll be in touch within [TBC] working days.</span></h2>
+          <p style="margin:0;font-size:17px;color:#2A4440">Your brief is with us. If you think of anything else, email <a href="mailto:hello@foldrastudio.com">hello@foldrastudio.com</a>.</p>
+        </div>
+    </div>
+
+    <aside aria-label="Other ways to reach us" style="display:flex;flex-direction:column">
+      <p style="margin:0 0 24px;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:26px;line-height:1.3;color:#1F5A60">Prefer to talk it through?</p>
+      <div style="padding:24px 0;border-top:1px solid #1F5A60">
+        <p style="margin:0 0 8px;font-size:11px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60">Email</p>
+        <a href="mailto:hello@foldrastudio.com" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;line-height:1.3;color:#16302C">hello@foldrastudio.com</a>
+      </div>
+      <div style="padding:24px 0;border-top:1px solid #C9CFCB">
+        <p style="margin:0 0 8px;font-size:11px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60">WhatsApp</p>
+        <a href="#" style="font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;line-height:1.3;color:#16302C">Message us on WhatsApp</a>
+        <p style="margin:4px 0 0;font-size:14px;color:#2A4440">[TBC number]</p>
+      </div>
+      <div style="padding:24px 0;border-top:1px solid #C9CFCB;border-bottom:1px solid #C9CFCB">
+        <p style="margin:0 0 8px;font-size:11px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60">Studio</p>
+        <p style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-size:24px;line-height:1.3">Mumbai · <span style="font-style:italic">clients anywhere</span></p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<footer style="padding:48px 0 36px;border-top:1px solid #C9CFCB">
+  <div class="fx-wrap" style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;font-size:12px;line-height:1.5;letter-spacing:.14em;text-transform:uppercase;color:#2A4440">
+    <span style="display:flex;align-items:center;gap:12px"><svg viewBox="0 0 62 64" width="20" height="21" aria-hidden="true"><rect x="0" y="0" width="16" height="64" fill="#1F5A60"></rect><rect x="15.5" y="0" width="30.5" height="16" fill="#1F5A60"></rect><rect x="15.5" y="24" width="18.5" height="16" fill="#1F5A60"></rect><path d="M46 0V16H62Z" fill="#E07A2E"></path><path d="M34 24V40H50Z" fill="#E07A2E"></path></svg><span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;letter-spacing:0;text-transform:none;color:#1F5A60">Made to unfold.</span></span>
+    <span>Footer as on the home page · © 2026 Foldra Studio</span>
+  </div>
+</footer>
+</div>
+<style>
+.fx-chip{height:44px;padding:0 20px;border-radius:2px;font-family:'Jost',system-ui,sans-serif;font-size:14px;font-weight:400;letter-spacing:.02em;cursor:pointer;background:transparent;color:#16302C;border:1px solid #9FB3B0}
+.fx-chip[aria-pressed="true"]{background:#1F5A60;color:#EEEBE6;border-color:#1F5A60}
+.fx-chip:focus-visible{outline:2px solid #1F5A60;outline-offset:3px}
+@media (max-width:600px){#quote-form{padding:32px 20px 36px!important}}
+</style>
+<script>
+(function () {
+  var form = document.getElementById('quote-form');
+  var thanks = document.getElementById('quote-thanks');
+  var error = document.getElementById('quote-error');
+  var hidden = document.getElementById('q-services');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('.fx-chip'));
+  function syncServices() {
+    hidden.value = chips.filter(function (c) { return c.getAttribute('aria-pressed') === 'true'; })
+                        .map(function (c) { return c.dataset.value; }).join(', ');
+  }
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      chip.setAttribute('aria-pressed', chip.getAttribute('aria-pressed') === 'true' ? 'false' : 'true');
+      syncServices();
+    });
+  });
+  function showThanks() { form.hidden = true; thanks.hidden = false; thanks.scrollIntoView({ block: 'center' }); }
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    syncServices();
+    error.hidden = true;
+    // Until a real form endpoint is set, just show the thank-you message.
+    if (form.action.indexOf('YOUR_FORM_ID') !== -1) { showThanks(); return; }
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } })
+      .then(function (r) { if (r.ok) { showThanks(); } else { error.hidden = false; } })
+      .catch(function () { error.hidden = false; });
+  });
+})();
+</script>
+</body>
+</html>
