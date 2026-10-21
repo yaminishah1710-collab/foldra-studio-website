@@ -17,6 +17,9 @@ a{color:#1F5A60}a:hover{color:#16302C}
 .fx-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
 .fx-head{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:48px;align-items:start}
 .fx-cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
+.fx-cards>a{padding:36px 28px 44px;border-left:1px solid #C9CFCB;border-top:1px solid #C9CFCB}
+.fx-cards>a:nth-child(-n+4){border-top:0}
+.fx-cards>a:nth-child(4n+1){border-left:0;padding-left:0}
 .fx-who{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:80px}
 .fx-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0}
 .fx-why{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:96px;align-items:start}
@@ -27,6 +30,8 @@ a{color:#1F5A60}a:hover{color:#16302C}
 .fx-hero,.fx-why,.fx-foot,.fx-head{grid-template-columns:minmax(0,1fr);gap:40px}
 .fx-meta{grid-template-columns:minmax(0,1fr);gap:12px}
 .fx-cards,.fx-who{grid-template-columns:minmax(0,1fr)}
+.fx-cards>a,.fx-cards>a:nth-child(4n+1){border-left:0;padding:28px 0 32px;border-top:1px solid #C9CFCB}
+.fx-cards>a:first-child{border-top:0}
 .fx-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
 .fx-nav{display:none}
 }
@@ -53,7 +58,6 @@ html{scroll-behavior:smooth}
     </a>
     <nav class="fx-nav" aria-label="Main" style="font-size:12px;line-height:1;font-weight:400;letter-spacing:.22em;text-transform:uppercase">
       <a href="services.html" style="color:#16302C;text-decoration:none">Services</a>
-      <a href="#process" style="color:#16302C;text-decoration:none">Process</a>
       <a href="#" style="color:#16302C;text-decoration:none">Work</a>
       <a href="#" style="color:#16302C;text-decoration:none">About</a>
     </nav>
@@ -71,7 +75,7 @@ html{scroll-behavior:smooth}
         <p style="margin:0 0 44px;font-size:19px;line-height:1.65;max-width:470px;color:#2A4440">Boxes, labels, inserts and gift kits, designed around your product and delivered ready for your team to use.</p>
         <div style="display:flex;flex-wrap:wrap;gap:32px;align-items:center">
           <a href="quote.html" style="display:inline-flex;align-items:center;gap:14px;height:56px;padding:0 32px;background:#1F5A60;color:#EEEBE6;border-radius:2px;font-size:12px;line-height:1;font-weight:500;letter-spacing:.22em;text-transform:uppercase;text-decoration:none">Start a project <span aria-hidden="true" style="font-size:16px;letter-spacing:0">→</span></a>
-          <a href="#process" style="color:#16302C;font-size:12px;line-height:1;font-weight:500;letter-spacing:.22em;text-transform:uppercase;text-decoration:underline;text-decoration-color:#E07A2E;text-decoration-thickness:1px;text-underline-offset:10px">See how we work</a>
+          <a href="services.html" style="color:#16302C;font-size:12px;line-height:1;font-weight:500;letter-spacing:.22em;text-transform:uppercase;text-decoration:underline;text-decoration-color:#E07A2E;text-decoration-thickness:1px;text-underline-offset:10px">Explore our services</a>
         </div>
       </div>
 
@@ -83,7 +87,7 @@ html{scroll-behavior:smooth}
           </div>
           <div style="position:absolute;left:0;top:0;bottom:0;width:58%;background:#1F5A60;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px">
             <svg viewBox="0 0 62 64" width="62" height="64" aria-hidden="true"><rect x="0" y="0" width="16" height="64" fill="#EEEBE6"></rect><rect x="15.5" y="0" width="30.5" height="16" fill="#EEEBE6"></rect><rect x="15.5" y="24" width="18.5" height="16" fill="#EEEBE6"></rect><path d="M46 0V16H62Z" fill="#E07A2E"></path><path d="M34 24V40H50Z" fill="#E07A2E"></path></svg>
-            <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:24px;line-height:1;color:#EEEBE6">Made to unfold.</span>
+            <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:24px;line-height:1;color:#EEEBE6">Beautiful unboxing.</span>
           </div>
           <div aria-hidden="true" style="position:absolute;left:58%;top:0;bottom:0;border-left:1px dashed #16302C"></div>
         </div>
@@ -106,30 +110,50 @@ html{scroll-behavior:smooth}
       <p style="margin:8px 0 0;display:flex;align-items:baseline;gap:14px;font-size:12px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60"><span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;letter-spacing:0;text-transform:none">01</span>What we make</p>
       <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
         <h2 id="s1" style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(38px,4.2vw,58px);line-height:1.04;letter-spacing:-0.01em;max-width:640px">Packaging for every <span style="font-style:italic;font-weight:400">layer</span> of your product.</h2>
-        <a href="services.html" style="font-size:12px;line-height:1;font-weight:500;letter-spacing:.22em;text-transform:uppercase;text-decoration:underline;text-decoration-color:#E07A2E;text-underline-offset:10px">All 8 service groups →</a>
+        <a href="services.html" style="font-size:12px;line-height:1;font-weight:500;letter-spacing:.22em;text-transform:uppercase;text-decoration:underline;text-decoration-color:#E07A2E;text-underline-offset:10px">View all services →</a>
       </div>
     </div>
     <div class="fx-cards" style="border-top:1px solid #1F5A60">
-      <a href="services.html" style="position:relative;display:block;padding:36px 32px 44px 0;text-decoration:none;color:#16302C">
-        <span aria-hidden="true" style="position:absolute;top:0;right:24px;width:18px;height:18px;background:#E07A2E;clip-path:polygon(0 0,100% 0,100% 100%)"></span>
-        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:56px">No. 02</span>
-        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:28px;line-height:1.1;margin-bottom:14px">Boxes and retail packaging</span>
+      <a href="services.html" style="position:relative;display:block;text-decoration:none;color:#16302C">
+        <span aria-hidden="true" style="position:absolute;top:0;right:20px;width:18px;height:18px;background:#E07A2E;clip-path:polygon(0 0,100% 0,100% 100%)"></span>
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:40px">No. 01</span>
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:26px;line-height:1.12;margin-bottom:12px">Product packaging</span>
+        <span style="display:block;font-size:15px;line-height:1.6;color:#2A4440">Labels, sleeves, wraps, pouches</span>
+      </a>
+      <a href="services.html" style="position:relative;display:block;text-decoration:none;color:#16302C">
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:40px">No. 02</span>
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:26px;line-height:1.12;margin-bottom:12px">Boxes and retail packaging</span>
         <span style="display:block;font-size:15px;line-height:1.6;color:#2A4440">Cartons, rigid boxes, paper bags</span>
       </a>
-      <a href="services.html" style="position:relative;display:block;padding:36px 32px 44px;border-left:1px solid #C9CFCB;text-decoration:none;color:#16302C">
-        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:56px">No. 01</span>
-        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:28px;line-height:1.1;margin-bottom:14px">Product packaging</span>
-        <span style="display:block;font-size:15px;line-height:1.6;color:#2A4440">Labels, sleeves, wraps</span>
+      <a href="services.html" style="position:relative;display:block;text-decoration:none;color:#16302C">
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:40px">No. 03</span>
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:26px;line-height:1.12;margin-bottom:12px">Shipping packaging</span>
+        <span style="display:block;font-size:15px;line-height:1.6;color:#2A4440">Shipping cartons, seals, cushioning</span>
       </a>
-      <a href="services.html" style="position:relative;display:block;padding:36px 32px 44px;border-left:1px solid #C9CFCB;text-decoration:none;color:#16302C">
-        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:56px">No. 05</span>
-        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:28px;line-height:1.1;margin-bottom:14px">Gifting and kits</span>
+      <a href="services.html" style="position:relative;display:block;text-decoration:none;color:#16302C">
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:40px">No. 04</span>
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:26px;line-height:1.12;margin-bottom:12px">Unboxing details</span>
+        <span style="display:block;font-size:15px;line-height:1.6;color:#2A4440">Cards, inserts, tissue, stickers</span>
+      </a>
+      <a href="services.html" style="position:relative;display:block;text-decoration:none;color:#16302C">
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:40px">No. 05</span>
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:26px;line-height:1.12;margin-bottom:12px">Gifting and kits</span>
         <span style="display:block;font-size:15px;line-height:1.6;color:#2A4440">Launch kits, hampers, gift boxes</span>
       </a>
-      <a href="services.html" style="position:relative;display:block;padding:36px 0 44px 32px;border-left:1px solid #C9CFCB;text-decoration:none;color:#16302C">
-        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:56px">No. 04</span>
-        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:28px;line-height:1.1;margin-bottom:14px">Unboxing details</span>
-        <span style="display:block;font-size:15px;line-height:1.6;color:#2A4440">Cards, inserts, tissue</span>
+      <a href="services.html" style="position:relative;display:block;text-decoration:none;color:#16302C">
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:40px">No. 06</span>
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:26px;line-height:1.12;margin-bottom:12px">Reusable and right-sized</span>
+        <span style="display:block;font-size:15px;line-height:1.6;color:#2A4440">Fabric bags, keepsake boxes, less material</span>
+      </a>
+      <a href="services.html" style="position:relative;display:block;text-decoration:none;color:#16302C">
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:40px">No. 07</span>
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:26px;line-height:1.12;margin-bottom:12px">Packaging by industry</span>
+        <span style="display:block;font-size:15px;line-height:1.6;color:#2A4440">Beauty, food, jewellery, apparel sets</span>
+      </a>
+      <a href="services.html" style="position:relative;display:block;text-decoration:none;color:#16302C">
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;margin-bottom:40px">No. 08</span>
+        <span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:26px;line-height:1.12;margin-bottom:12px">Packaging planning</span>
+        <span style="display:block;font-size:15px;line-height:1.6;color:#2A4440">Standard sizes, repeat orders, reviews</span>
       </a>
     </div>
   </div>
@@ -163,29 +187,10 @@ html{scroll-behavior:smooth}
   </div>
 </section>
 
-<!-- 03 Process -->
-<section id="process" aria-labelledby="s4" style="padding:0 0 128px">
-  <div class="fx-wrap">
-    <div class="fx-head" style="margin-bottom:64px">
-      <p style="margin:8px 0 0;display:flex;align-items:baseline;gap:14px;font-size:12px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60"><span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;letter-spacing:0;text-transform:none">03</span>How it works</p>
-      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:24px">
-        <h2 id="s4" style="margin:0;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(38px,4.2vw,58px);line-height:1.04;letter-spacing:-0.01em;max-width:640px">Four steps from first question to <span style="font-style:italic;font-weight:400">delivery.</span></h2>
-        <a href="#" style="font-size:12px;line-height:1;font-weight:500;letter-spacing:.22em;text-transform:uppercase;text-decoration:underline;text-decoration-color:#E07A2E;text-underline-offset:10px">The process and key facts →</a>
-      </div>
-    </div>
-    <ol class="fx-steps" style="list-style:none;margin:0;padding:0;border-top:1px solid #1F5A60">
-      <li style="position:relative;padding:40px 32px 8px 0"><span aria-hidden="true" style="position:absolute;top:-6px;left:0;width:11px;height:11px;background:#E07A2E;clip-path:polygon(0 0,100% 0,100% 100%)"></span><span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:400;font-size:72px;line-height:1;color:#1F5A60;margin-bottom:20px">i</span><span style="font-size:13px;line-height:1.4;font-weight:500;letter-spacing:.22em;text-transform:uppercase">Discover</span></li>
-      <li style="padding:40px 32px 8px;border-left:1px solid #C9CFCB"><span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:400;font-size:72px;line-height:1;color:#1F5A60;margin-bottom:20px">ii</span><span style="font-size:13px;line-height:1.4;font-weight:500;letter-spacing:.22em;text-transform:uppercase">Recommend</span></li>
-      <li style="padding:40px 32px 8px;border-left:1px solid #C9CFCB"><span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:400;font-size:72px;line-height:1;color:#1F5A60;margin-bottom:20px">iii</span><span style="font-size:13px;line-height:1.4;font-weight:500;letter-spacing:.22em;text-transform:uppercase">Design and source</span></li>
-      <li style="padding:40px 32px 8px;border-left:1px solid #C9CFCB"><span style="display:block;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-weight:400;font-size:72px;line-height:1;color:#1F5A60;margin-bottom:20px">iv</span><span style="font-size:13px;line-height:1.4;font-weight:500;letter-spacing:.22em;text-transform:uppercase">Deliver</span></li>
-    </ol>
-  </div>
-</section>
-
-<!-- 04 Why Foldra -->
+<!-- 03 Why Foldra -->
 <section aria-labelledby="s5" style="padding:0 0 144px">
   <div class="fx-wrap">
-    <p style="margin:0 0 48px;display:flex;align-items:baseline;gap:14px;font-size:12px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60"><span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;letter-spacing:0;text-transform:none">04</span>Why Foldra</p>
+    <p style="margin:0 0 48px;display:flex;align-items:baseline;gap:14px;font-size:12px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60"><span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;letter-spacing:0;text-transform:none">03</span>Why Foldra</p>
     <div class="fx-why">
       <div>
         <h2 id="s5" style="margin:0 0 48px;font-family:'Cormorant Garamond',Georgia,serif;font-weight:500;font-size:clamp(34px,3.4vw,48px);line-height:1.12;letter-spacing:-0.01em">Box suppliers sell a box. Agencies design one. <span style="font-style:italic;font-weight:400;color:#1F5A60">We take it from the first question to delivery.</span></h2>
@@ -195,11 +200,10 @@ html{scroll-behavior:smooth}
           <li style="display:flex;align-items:baseline;gap:24px;padding:22px 0;border-top:1px solid #C9CFCB;border-bottom:1px solid #C9CFCB"><span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1;color:#1F5A60;min-width:28px">iii.</span><span style="font-size:17px;line-height:1.5;font-weight:400">You approve a physical sample before production.</span></li>
         </ul>
       </div>
-      <div role="img" aria-label="Photo placeholder: one box open to show its ember interior" style="position:relative;height:520px;background:#F7F5F1;border:1px solid #C9CFCB;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;padding:32px;box-sizing:border-box">
+      <figure style="margin:0;position:relative;height:520px;overflow:hidden;border:1px solid #C9CFCB;background:#EFE9DF">
+        <svg viewBox="0 0 600 520" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration of an open teal Foldra Studio box with an ember interior and cream tissue paper, with a thank-you card, on a linen table in soft daylight" style="display:block;width:100%;height:100%"><defs><linearGradient id="fxWall" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F8F4EC"></stop><stop offset="1" stop-color="#E7DFD2"></stop></linearGradient><linearGradient id="fxTable" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6DCCB"></stop><stop offset="1" stop-color="#D4C6B0"></stop></linearGradient><radialGradient id="fxLight" cx="0.18" cy="0.1" r="0.8"><stop offset="0" stop-color="#FFFFFF" stop-opacity="0.75"></stop><stop offset="1" stop-color="#FFFFFF" stop-opacity="0"></stop></radialGradient><radialGradient id="fxShadow" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#16302C" stop-opacity="0.32"></stop><stop offset="1" stop-color="#16302C" stop-opacity="0"></stop></radialGradient><linearGradient id="fxInside" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B9531A"></stop><stop offset="1" stop-color="#E9893F"></stop></linearGradient><linearGradient id="fxFront" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22646A"></stop><stop offset="1" stop-color="#1A5157"></stop></linearGradient><linearGradient id="fxLid" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2A6F75"></stop><stop offset="1" stop-color="#1B5257"></stop></linearGradient></defs><rect width="600" height="520" fill="url(#fxWall)"></rect><rect y="335" width="600" height="185" fill="url(#fxTable)"></rect><path d="M0 335 H600" stroke="#CFC2AC" stroke-width="1"></path><g stroke="#CDBFA8" stroke-width="0.6" opacity="0.5"><path d="M0 360 H600"></path><path d="M0 392 H600"></path><path d="M0 430 H600"></path><path d="M0 476 H600"></path></g><rect width="600" height="520" fill="url(#fxLight)"></rect><ellipse cx="335" cy="432" rx="250" ry="36" fill="url(#fxShadow)"></ellipse><polygon points="152,104 398,84 420,226 172,250" fill="url(#fxLid)"></polygon><polygon points="172,250 420,226 422,236 174,260" fill="#123F44"></polygon><polygon points="398,84 420,226 432,222 410,82" fill="#164A4F"></polygon><g transform="translate(262,138) rotate(-5) scale(0.9)" opacity="0.95"><rect x="0" y="0" width="16" height="64" fill="#EEEBE6"></rect><rect x="15.5" y="0" width="30.5" height="16" fill="#EEEBE6"></rect><rect x="15.5" y="24" width="18.5" height="16" fill="#EEEBE6"></rect><path d="M46 0V16H62Z" fill="#E07A2E"></path><path d="M34 24V40H50Z" fill="#E07A2E"></path></g><polygon points="170,262 418,242 468,300 212,326" fill="url(#fxInside)"></polygon><polygon points="170,262 418,242 418,282 174,304" fill="#A9481A" opacity="0.55"></polygon><path d="M196 300 C222 262 252 290 270 268 C292 244 318 282 340 260 C362 240 384 276 410 258 C426 248 440 266 452 290 C410 300 300 312 214 320 Z" fill="#F6F0E6"></path><path d="M196 300 C222 262 252 290 270 268 C292 244 318 282 340 260 C362 240 384 276 410 258 C426 248 440 266 452 290" fill="none" stroke="#E0D4C1" stroke-width="1.5"></path><path d="M262 300 C276 284 284 292 296 278 M330 296 C344 280 352 288 366 272" fill="none" stroke="#E6DCCB" stroke-width="1.2"></path><polygon points="212,326 468,300 468,408 212,436" fill="url(#fxFront)"></polygon><polygon points="170,262 212,326 212,436 170,370" fill="#2F7477"></polygon><polygon points="418,242 468,300 468,408 418,350" fill="#164A4F" opacity="0.9"></polygon><path d="M212 326 L468 300" stroke="#E9893F" stroke-width="3"></path><path d="M170 262 L212 326" stroke="#D2732F" stroke-width="2"></path><circle cx="342" cy="372" r="22" fill="#E07A2E"></circle><circle cx="342" cy="372" r="17" fill="none" stroke="#F4EEE4" stroke-width="1" stroke-dasharray="2 3"></circle><g transform="translate(334,362) scale(0.28)"><rect x="0" y="0" width="16" height="64" fill="#F6F0E6"></rect><rect x="15.5" y="0" width="30.5" height="16" fill="#F6F0E6"></rect><rect x="15.5" y="24" width="18.5" height="16" fill="#F6F0E6"></rect></g><g transform="translate(470,352) rotate(9)"><rect x="3" y="5" width="96" height="66" fill="#16302C" opacity="0.12"></rect><rect width="96" height="66" fill="#FBF8F2" stroke="#E2D7C6"></rect><text x="48" y="38" text-anchor="middle" font-family="Cormorant Garamond, Georgia, serif" font-style="italic" font-size="17" fill="#1F5A60">thank you</text><path d="M30 48 H66" stroke="#E07A2E" stroke-width="1"></path></g><g transform="translate(96,404) rotate(-14)"><rect width="70" height="10" rx="1" fill="#C8A27A"></rect><rect y="10" width="70" height="3" fill="#B08C66"></rect></g></svg>
         <span aria-hidden="true" style="position:absolute;top:0;right:0;width:36px;height:36px;background:#E07A2E;clip-path:polygon(0 0,100% 0,100% 100%)"></span>
-        <span style="font-size:11px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60">Photograph</span>
-        <span style="font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:22px;line-height:1.35;max-width:300px">One box open to show its ember interior. Soft side daylight, pale wood or linen ground.</span>
-      </div>
+      </figure>
     </div>
   </div>
 </section>
@@ -225,15 +229,15 @@ html{scroll-behavior:smooth}
           <svg viewBox="0 0 62 64" width="40" height="41" aria-hidden="true"><rect x="0" y="0" width="16" height="64" fill="#1F5A60"></rect><rect x="15.5" y="0" width="30.5" height="16" fill="#1F5A60"></rect><rect x="15.5" y="24" width="18.5" height="16" fill="#1F5A60"></rect><path d="M46 0V16H62Z" fill="#E07A2E"></path><path d="M34 24V40H50Z" fill="#E07A2E"></path></svg>
           <span style="font-family:'Cormorant Garamond',Georgia,serif;font-size:44px;line-height:1;font-weight:500">Foldra <span style="font-style:italic;font-weight:400">Studio</span></span>
         </div>
-        <p style="margin:28px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:24px;line-height:1.35;max-width:380px;color:#1F5A60">Made to unfold.</p>
+        <p style="margin:28px 0 0;font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:24px;line-height:1.35;max-width:380px;color:#1F5A60">Beautiful unboxing.</p>
       </div>
       <div style="font-size:15px;line-height:2">
         <p style="margin:0 0 16px;font-size:11px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60">Contact</p>
-        <a href="mailto:hello@foldrastudio.com" style="color:#16302C">hello@foldrastudio.com</a><br>Studio in Mumbai · Clients anywhere<br><a href="#" style="color:#16302C">Instagram</a> · <a href="#" style="color:#16302C">LinkedIn</a>
+        <a href="mailto:hello@foldrastudio.com" style="color:#16302C">hello@foldrastudio.com</a><br><a href="tel:+919372079618" style="color:#16302C">+91 93720 79618</a><br>Studio in Mumbai · Clients anywhere<br><a href="#" style="color:#16302C">Instagram</a> · <a href="#" style="color:#16302C">LinkedIn</a>
       </div>
       <div style="font-size:15px;line-height:2">
         <p style="margin:0 0 16px;font-size:11px;line-height:1;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:#1F5A60">Pages</p>
-        <a href="services.html" style="color:#16302C;text-decoration:none">Services</a><br><a href="#process" style="color:#16302C;text-decoration:none">Process</a><br><a href="#" style="color:#16302C;text-decoration:none">Work</a><br><a href="#" style="color:#16302C;text-decoration:none">About</a>
+        <a href="services.html" style="color:#16302C;text-decoration:none">Services</a><br><a href="#" style="color:#16302C;text-decoration:none">Work</a><br><a href="#" style="color:#16302C;text-decoration:none">About</a>
       </div>
     </div>
     <div style="margin-top:72px;padding-top:20px;border-top:1px solid #C9CFCB;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:12px;line-height:1.5;letter-spacing:.14em;text-transform:uppercase;color:#2A4440"><span>© 2026 Foldra Studio</span><span>foldrastudio.com</span></div>
